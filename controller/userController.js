@@ -9,9 +9,8 @@ const User = require("./../model/userDetails.js");
 const Stat = require("./../model/statDetails.js");
 
 let getUser = async (req, res) => {
-    console.log(mongoose.connection.readyState)
-    let x = await Stat.find({});
-    res.json(x)
+        let x = await Stat.find({})
+        res.json(x)
 }
 
 let createUser = async(req, res) => {
